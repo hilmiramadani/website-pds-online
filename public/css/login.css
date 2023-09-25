@@ -1,0 +1,305 @@
+body {
+    background-color: #F5FAFD;
+    font-family: 'Poppins';
+}
+
+/* .btn {
+    padding: 10px; 
+    background: #ED2B2A; 
+    box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.14); 
+    border-radius: 20px; 
+    justify-content: center; 
+    align-items: center;
+    align-items: center; 
+    gap: 10px; 
+    display: flex;
+    width: 120px;   
+    height: 40.323px;
+    color: #fff;
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 600;
+    letter-spacing: 0.45px;
+    
+} */
+
+.alert {
+    position: absolute;
+    width: 74%;
+    /* height: 50px; */
+    margin-top: -55px;
+    /* margin-top: 20px; */
+}
+
+.btn-close {
+    width: 20px;
+}
+
+.btn-submit {
+    --primary-color: #ED2B2A;
+    --secondary-color: #fff;
+    --hover-color: #560216;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    margin: auto;
+    gap: 0.6em;
+    font-weight: bold;
+    height: 40px;
+}
+
+.btn-submit .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-submit .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+}
+
+.btn-submit .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+
+.btn-submit:hover {
+    background-color: var(--hover-color);
+}
+
+.btn-submit:hover .arrow {
+    background: var(--secondary-color);
+}
+
+.btn-submit:hover .arrow:before {
+    right: 0;
+}
+
+
+.center-all {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #560216;
+}
+
+.form {
+    position: relative;
+    width: 460px;
+    height: 580px;
+    display: block;
+    margin-bottom: 70px;
+    background: rgba(240, 243, 245, 0.80);
+    /* background: transparent; */
+    box-shadow: 5px 5px 4px rgba(235, 125, 125, 0.4);
+    border-radius: 20px;
+    border: 3px white solid;
+    backdrop-filter: blur(25px);
+    padding: 50px 60px 50px 60px;
+    transition: .5s ease-in-out;
+
+}
+
+.form:hover {
+    transform: scale(1.01);
+}
+
+.form h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 33px;
+    /* identical to box height */
+
+    letter-spacing: 0.01em;
+    font-family: Poppins;
+    font-weight: 600;
+    letter-spacing: 1.02px;
+    color: #ED2B2A;
+}
+
+.form p {
+    color: #726F6F;
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 0.45px;
+}
+
+.form .login-txt-bwh {
+    text-align: center
+}
+
+.login-txt-bwh {
+    width: 75%;
+    color: #726F6F;
+    font-size: 13px;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 0.52px;
+    text-align: center;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.login-txt-bwh a {
+    color: #ED2B2A;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.signup {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    /* identical to box height */
+
+    letter-spacing: 0.01em;
+    color: #ED2B2A;
+}
+
+.text {
+    margin-left: 8rem;
+}
+
+.text p {
+    width: 70%;
+    font-size: 20px;
+    font-family: Poppins;
+    color: #867D7D;
+    font-weight: 500;
+    letter-spacing: 0.80px;
+    word-wrap: break-word;
+}
+
+.svg {
+    margin-top: 3rem;
+}
+
+.geo1 {
+    position: absolute;
+    margin: 20px 0 0 50px;
+}
+
+.geo2 {
+    position: absolute;
+    margin-top: 550px;
+    margin-left: 50px;
+}
+
+.geo3 {
+    position: absolute;
+    margin-top: 630px;
+    margin-left: 608px;
+}
+
+.geo4 {
+    position: absolute;
+    margin-left: 525px;
+    margin-top: 30px;
+}
+
+.geo5 {
+    position: absolute;
+    margin-left: 502px;
+    margin-top: 15px;
+}
+
+.geo6 {
+    position: absolute;
+    margin-left: 680px;
+    margin-top: 48px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    height: 50px;
+    border: 2px solid #E4E7EA;
+    box-shadow: 0 0 2px 0 #fff;
+    color: #455A64;
+    background: none;
+    border-radius: 7px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+/* input[type="text"], input[type="password"]:focus {
+    border-color: #fff;
+    box-shadow: 0 0 2px 0 #fff;
+} */
+
+.inputWithIcon input[type="text"],
+input[type="password"] {
+    padding-left: 60px;
+}
+
+.inputWithIcon {
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.inputWithIcon .icon {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    padding: 9px 8px;
+    color: #000;
+    transition: 0.3s;
+}
+
+.inputWithIcon span {
+    position: absolute;
+    cursor: pointer;
+    right: 15px;
+    top: 22px;
+}
+
+/* .inputWithIcon input[type="text"], input[type="password"]:focus + i {
+    color: #ED2B2A;
+    background-color: #F0F3F5;
+} */
+
+.inputWithIcon.inputIconBg .icon {
+    background-color: #fff;
+    color: #000;
+    padding: 8px 12px;
+    border-radius: 7px;
+    margin: 5px;
+}
+
+/* .inputWithIcon.inputIconBg input[name="id"], input[type="password"]:focus + i {
+    color: #000;
+    background-color: none;
+} */
